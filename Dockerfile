@@ -69,8 +69,8 @@ RUN useradd -ms /bin/bash -u 1000 odoo
 WORKDIR /opt/odoo
 
 # Clone OCB repository
-ARG ODOO_VERSION
-RUN git clone --depth 1 --branch ${ODOO_VERSION} https://github.com/OCA/OCB.git /opt/odoo \
+ARG ODOO_VERSION=18.0
+RUN git clone --depth 1 --branch 18.0 https://github.com/OCA/OCB.git /opt/odoo \
     && chown -R odoo:odoo /opt/odoo
 
 # Install Python dependencies
