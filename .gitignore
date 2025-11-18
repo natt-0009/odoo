@@ -1,0 +1,50 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Odoo
+*.pyc
+*.pyo
+*.swp
+*~
+.DS_Store
+filestore/
+sessions/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+
+# Database
+*.sql
+backup_*.sql
+
+# Docker volumes
+odoo_data/
+postgres_data/
+pgadmin_data/
+
+# Logs directory content
+logs/*.log
+logs/*
+
+# Odoo filestore and sessions
+filestore/
+sessions/
+
+# OCB source (cloned by Docker)
+odoo/.git/
+odoo/__pycache__/
